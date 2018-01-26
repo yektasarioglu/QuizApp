@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yekta.myquiz.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vader" />
+
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#ffff"
+            android:id="@+id/questionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Q1:" />
+
+        <TextView
+            android:textColor="#ffff"
+            android:id="@+id/question"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:lines="9"
+            android:layout_margin="16dp"
+            android:text="Who is this villain above?" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#000"
+        android:id="@+id/inside"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="#b70000"
+                    android:textColor="#ffff"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:onClick="checked"
+                    android:id="@+id/OptionA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:text="A-) Anakin" />
+
+                <RadioButton
+                    android:buttonTint="#b70000"
+                    android:textColor="#ffff"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:onClick="checked"
+                    android:id="@+id/OptionB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B-) Darth Vader" />
+
+                <RadioButton
+                    android:buttonTint="#b70000"
+                    android:textColor="#ffff"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:onClick="checked"
+                    android:id="@+id/OptionC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C-) Darth Maul" />
+
+                <RadioButton
+                    android:buttonTint="#b70000"
+                    android:textColor="#ffff"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:onClick="checked"
+                    android:id="@+id/OptionD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D-) Snoke" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:background="#3d3d3d"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="proceed"
+        android:text="Submit" />
+
+
+
+</LinearLayout>
