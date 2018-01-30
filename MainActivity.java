@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
         radioButton[2] = (RadioButton) findViewById(R.id.OptionC);
         radioButton[3] = (RadioButton) findViewById(R.id.OptionD);
 
-
-        //TODO fix the god damn problem that shows same photo and options when you click submit for the first time
-
         trueOption.add(radioButton[1].getId());
         trueOption.add(radioButton[0].getId());
         trueOption.add(radioButton[0].getId());
